@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>modu | Adaptive, active learning from your own course material</title>
+<meta name="description" content="modu converts lecture slides, recordings and reading packs into calibrated practice drills, atomised concept notes and mock assessments, grounded strictly in your institution's syllabus.">
+<meta name="theme-color" content="#FAFAF8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/hero.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="modu home">modu<i>.</i></a>
+    <button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="links"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <nav class="links" id="links" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#faculty">For Faculty</a>
+      <a href="#science">Learning Science</a>
+      <a href="#security">Security</a>
+      <a class="btn sm" href="#pilot">Request Campus Pilot</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div id="top"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <span class="tag">Next-Generation Courseware Intelligence</span>
+    <h1>Transform Static Course Material Into <em>Adaptive, Active Learning</em></h1>
+    <p class="sub">modu converts lecture slides, recordings, and reading packs into calibrated practice drills, atomised concept notes, and mock assessments, grounded strictly in your institution’s syllabus.</p>
+    <div class="cta-row">
+      <a class="btn" href="#pilot">Request a Campus Pilot</a>
+      <a class="btn ghost" href="#faculty">Explore the Faculty Platform</a>
+    </div>
+  </div>
+
+  <div class="stage">
+<section class="mh" id="moduHero" role="img"
+  aria-label="Animated product story for Modu, an AI learning platform for universities. A university's messy lecture notes, past papers and quizzes are absorbed by an AI engine and turned into atomic notes, flashcards, quizzes and interactive puzzles inside a student app. A lecturer dashboard then shows which topics students struggle with and who is ahead or behind, recommends what to revisit in class, and sends extra drills back to the students.">
+<div class="mh-viewport" aria-hidden="true">
+<div class="mh-stage">
+
+<svg class="hid" aria-hidden="true">
+  <symbol id="mh-flame" viewBox="0 0 24 28"><path fill="#EF9F27" d="M12 1C13 6 19 9 19 16A7 7 0 0 1 5 16C5 12 7.5 10.5 8.5 7.5C10 9 10.5 10 11 11C12 8 11 5 12 1Z"/><path fill="#FAEEDA" d="M12 14C13 16 15 17 15 19.5A3 3 0 0 1 9 19.5C9 17.5 11 17 12 14Z"/></symbol>
+  <symbol id="mh-spark" viewBox="0 0 24 24"><path d="M12 1C12.8 7 17 11.2 23 12C17 12.8 12.8 17 12 23C11.2 17 7 12.8 1 12C7 11.2 11.2 7 12 1Z"/></symbol>
+</svg>
+
+<div id="scene">
+
+  <div class="el" id="bloom"></div>
+
+  <div class="el" id="headWrap"><h1 id="headline"><span class="w">The</span> <span class="w">future</span> <span class="w">of</span> <span class="w acc">education</span> <span class="w">is</span> <span class="w">here.</span></h1></div>
+
+  <!-- mess cards + trails are inserted before this marker (keeps z-order) -->
+  <span id="mAnchor" hidden></span>
+
+  <div class="el" id="scan"></div>
+
+  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Modu AI</span></div>
+
+  <!-- clean cards -->
+  <div class="el card cl" id="cNote">
+    <span class="pill">Atomic note</span>
+    <h3>Recursion</h3>
+    <p>A function that solves a big problem by calling itself on a smaller piece, until it reaches a base case.</p>
+    <div class="stack"><i>fact(1) · base case</i><i>fact(2)</i><i>fact(3)</i></div>
+  </div>
+
+  <div class="el" id="cFlash">
+    <div class="flip">
+      <div class="card ff front"><span class="pill">Flashcard</span><div class="big">Base case?</div><div class="hint">Tap to flip</div></div>
+      <div class="card ff back"><span class="pill ok">Answer</span><div class="ans">The condition that stops the recursion, so the function never calls itself again.</div></div>
+    </div>
+  </div>
+
+  <div class="el card cl" id="cQuiz">
+    <span class="pill">Quick check</span>
+    <h3 class="q">What does a hash map do?</h3>
+    <div class="opts">
+      <div class="opt" id="optA"><div class="lip"></div><div class="of"><span class="t t1">Sorts items alphabetically</span></div></div>
+      <div class="opt" id="optB"><div class="lip"></div><div class="lip l2"></div>
+        <div class="of"><div class="fill"></div><span class="t t1">Maps keys to values in O(1)</span><span class="t t2">Maps keys to values in O(1)</span>
+          <span class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div></div>
+    </div>
+  </div>
+
+  <div class="el card cl" id="cPuzzle">
+    <span class="pill">Interactive</span>
+    <div class="ptitle">Drop the node where it keeps the tree a valid BST</div>
+    <div class="pz" id="pz"></div>
+  </div>
+
+  <div class="el card cl" id="cStreak">
+    <div class="srow"><svg id="flame" viewBox="0 0 24 28"><use href="#mh-flame"/></svg><div><h3>7 day streak</h3><small>Lesson 3 of 4 · +10 XP</small></div></div>
+    <div class="bar"><i id="sfill"></i></div>
+  </div>
+
+  <!-- student app -->
+  <div class="el" id="phone">
+    <div class="screen">
+      <div class="notch"></div>
+      <div id="toast"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg>3 new drills from CS210</div>
+      <div class="top"><svg viewBox="0 0 24 28"><use href="#mh-flame"/></svg><b>7</b><div class="pbar"><i></i></div></div>
+      <div class="card">
+        <span class="pill">Hash maps</span>
+        <h3>What does a hash map do?</h3>
+        <span class="mo">Sorts items alphabetically</span>
+        <span class="mo">Maps keys to values in O(1)</span>
+      </div>
+      <div class="check"><div class="lip"></div><div class="bf">Check</div></div>
+    </div>
+  </div>
+
+  <!-- lecturer dashboard -->
+  <div class="el card" id="dash">
+    <div class="dh"><h4>CS210 · Week 6</h4><span class="pill">28 students</span></div>
+    <div class="dg">
+      <div>
+        <div class="lab">Topic mastery</div>
+        <div class="mrow"><div class="mtop"><span>Hash maps</span><span class="pc" id="pc1">0%</span></div><div class="track"><i class="ok" id="f1"></i></div></div>
+        <div class="mrow"><div class="mtop"><span>Recursion<em class="flag" id="flag" style="font-style:normal">Struggling</em></span><span class="pc" id="pc2">0%</span></div><div class="track"><i class="warn" id="f2"></i></div></div>
+      </div>
+      <div>
+        <div class="lab">Where the class is</div>
+        <div class="sbox" id="sbox"><div class="colh"><span>Ahead</span><span>On track</span><span>Behind</span></div></div>
+      </div>
+    </div>
+    <div class="lab">Recommendations</div>
+    <div class="recs">
+      <div class="rec" id="rec1"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg>Revisit recursion in Thursday's lecture<svg class="spk" id="spk1" viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div>
+      <div class="rec" id="rec2"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg>Push 3 extra drills to 28 students<svg class="spk" id="spk2" viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div>
+    </div>
+    <div class="dfoot"><div class="btn" id="send"><div class="lip"></div><div class="bf">Send drills</div></div></div>
+  </div>
+
+  <div class="el" id="xp">+10 XP</div>
+  <div class="el" id="cursor"><svg viewBox="0 0 24 28"><path d="M3 2L3 21L8 16.5L11.5 24.5L14.5 23.2L11 15.5L17.5 15Z" fill="#26215C" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  <div class="el" id="dot"></div>
+  <div class="el" id="ring"></div>
+  <div class="el" id="seed"></div>
+
+</div>
+</div>
+</div>
+</section>
+
+  </div>
+</section>
+
+<section class="guar" aria-label="Key guarantees">
+  <div class="wrap">
+    <ul>
+      <li class="rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5L15.5 10"/></svg></div><b>Strict Syllabus Fidelity</b><span>100% grounded in your material with zero out-of-scope hallucinations</span></li>
+      <li class="rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></div><b>Full IP Ownership</b><span>Course materials are private and never used to train public AI models</span></li>
+      <li class="rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0011 18.7l1-1"/></svg></div><b>LMS Ready</b><span>Designed for seamless integration with Moodle and existing institutional platforms</span></li>
+      <li class="rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></svg></div><b>Backed by Learning Science</b><span>Built on spaced retrieval practice, atomised learning, and dual coding</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="sec" id="overview">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="tag">The Pedagogical Gap</span>
+      <h2>Static Courseware Leaves Students Guessing and Faculty in the Dark</h2>
+    </div>
+    <div class="cols">
+      <article class="card bad rv"><div class="k">The Generic AI Hazard</div><h3>Uncalibrated AI Leads to Confusion</h3><p>When students turn to open-web chatbots, they receive hallucinated, out-of-scope answers that pull them down irrelevant rabbit holes. Generic tools cannot follow a lecturer’s specific syllabus, leading students to memorize content that won’t appear on exams.</p></article>
+      <article class="card bad rv"><div class="k">The Assessment Bottleneck</div><h3>Limited Past Papers Cause Rote Memorization</h3><p>Faculty don’t have the time to hand-write dozens of new practice papers each semester. With limited practice materials available, students end up rote-learning past question phrasing rather than developing true conceptual understanding.</p></article>
+      <article class="card bad rv"><div class="k">The Midterm Blind Spot</div><h3>Zero Visibility into Where Cohorts Are Struggling</h3><p>Between the first lecture and the midterm exam, lecturers have no systematic way to see where students are hitting friction. Interventions often happen too late, after grades have already dropped.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUTION ============ -->
+<section class="sec alt" id="engine">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="tag">Active Learning &amp; Retrieval</span>
+      <h2>Moving Students from Passive Reading to Deep Conceptual Mastery</h2>
+    </div>
+
+    <div class="feat rv">
+      <div class="txt">
+        <span class="n">01</span>
+        <h3>Atomised Concept Notes</h3>
+        <div class="sh">Breaking Down Cognitive Overload</div>
+        <p class="b">modu deconstructs dense, multi-hour lecture recordings and 80-page slide decks into modular, interconnected concept units. Students can study structured, bite-sized ideas with direct source citations back to their original course materials.</p>
+      </div>
+      <div class="viz" aria-hidden="true">
+        <div class="atoms">
+          <div class="atom big">Recursion<small>Lecture 7 · slide 12 · 14:32</small></div>
+          <div class="atom">Base case<small>Lecture 7 · slide 14</small></div>
+          <div class="atom">Call stack<small>Reading pack · p.118</small></div>
+          <div class="atom">Tail recursion<small>Lecture 7 · 31:05</small></div>
+          <div class="atom">Memoisation<small>Tutorial 4 · Q3</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat rev rv">
+      <div class="txt">
+        <span class="n">02</span>
+        <h3>Infinite Calibrated Drills &amp; Mock Papers</h3>
+        <div class="sh">True Active Retrieval Practice</div>
+        <p class="b">Automatically generate continuous variations of formative quizzes, quick concept drills, and full-length mock examination papers. Students test their underlying grasp of the subject, not their memory of past exams.</p>
+      </div>
+      <div class="viz" aria-hidden="true">
+        <div class="drill">
+          <span class="pillx">Variation 14 of ∞</span>
+          <div class="q">Which structure gives O(1) average lookup?</div>
+          <span class="o">Binary search tree</span>
+          <span class="o on">Hash table</span>
+          <span class="o">Linked list</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat rv">
+      <div class="txt">
+        <span class="n">03</span>
+        <h3>Strict Syllabus Boundaries</h3>
+        <div class="sh">Academic Rigor with Zero Hallucinations</div>
+        <p class="b">modu operates exclusively inside the boundaries of your verified curriculum. The platform reinforces what the professor actually teaches, preventing confusion and keeping revision focused.</p>
+      </div>
+      <div class="viz" aria-hidden="true">
+        <div class="bound">
+          <div class="ring"></div>
+          <div class="core">Your verified<br>curriculum</div>
+          <span class="out">open-web tangent</span><span class="out o2">out of scope</span><span class="out o3">not examinable</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FACULTY ============ -->
+<section class="sec" id="faculty">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="tag">Institutional Oversight</span>
+      <h2>Real-Time Cohort Diagnostics. Total Faculty Control.</h2>
+    </div>
+    <div class="dgrid">
+      <article class="card rv">
+        <div class="vz" aria-hidden="true"><div class="bars"><i style="height:22%"></i><i style="height:38%"></i><i style="height:58%"></i><i style="height:84%"></i><i class="g" style="height:100%"></i><i style="height:72%"></i><i style="height:44%"></i><i class="w" style="height:24%"></i></div></div>
+        <div class="tx"><h3>Cohort Distribution Tracking</h3><p style="margin-top:12px">View real-time performance analytics across your entire module. Identify how understanding is distributed across top performers, the cohort average, and students in need of academic support well before final exams.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="vz" aria-hidden="true"><div class="alertbox"><div class="alert"><b></b>38% of the cohort missed “Recursion” drills</div><div class="alert s"><b></b>Suggested: push 3 targeted review drills</div></div></div>
+        <div class="tx"><h3>Misconception Alerts &amp; Actionable Suggestions</h3><p style="margin-top:12px">Receive automated alerts when a significant portion of the class struggles with a specific topic or drill. Get actionable recommendations to address learning gaps, such as pushing targeted review drills or addressing common misunderstandings in the next lecture.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="vz" aria-hidden="true"><div class="gov"><div>Week 6 · Hash maps <em class="live">Live</em></div><div>Mock exam 1 <em class="rev">In review</em></div><div>Week 8 · Graphs <em class="sch">Mon 09:00</em></div></div></div>
+        <div class="tx"><h3>Release &amp; Content Governance</h3><p style="margin-top:12px">Faculty remain in complete control. Choose exactly which modules, drills, and mock exams are released, review generated materials before publishing, and schedule unlocks according to your term timetable.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEARNING SCIENCE ============ -->
+<section class="sec alt" id="science">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="tag">Rooted in Cognitive Science</span>
+      <h2>Designed Around Proven Learning Mechanisms</h2>
+    </div>
+    <div class="sci">
+      <article class="card rv"><h3>Spaced Retrieval Systems (SRS)</h3><p style="margin-top:12px">Surfaces challenging concepts at optimal intervals to convert short-term study into permanent long-term memory.</p></article>
+      <article class="card rv"><h3>Dual Coding &amp; Multimodal Reinforcement</h3><p style="margin-top:12px">Combines structured textual explanations with formula sheets, diagrams, and visual references from original lecture slides.</p></article>
+      <article class="card rv"><h3>Atomisation &amp; Cognitive Load Theory</h3><p style="margin-top:12px">Prevents information overload by isolating individual principles before challenging students with multi-step problem solving.</p></article>
+    </div>
+    <div class="curve rv" aria-hidden="true">
+      <svg viewBox="0 0 800 220" role="presentation">
+        <g stroke="#E8E6F5" stroke-width="1"><path d="M40 180H780M40 120H780M40 60H780"/></g>
+        <path d="M40 40 C 90 150, 150 175, 230 178" fill="none" stroke="#B4B2A9" stroke-width="3" stroke-dasharray="6 6"/>
+        <path d="M40 40 C 70 100,100 110,140 112 L140 40 C 190 100,230 108,290 110 L290 40 C 350 80,420 90,520 92 L520 40 C 600 66,690 72,780 74" fill="none" stroke="#534AB7" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <g fill="#534AB7"><circle cx="140" cy="40" r="6"/><circle cx="290" cy="40" r="6"/><circle cx="520" cy="40" r="6"/></g>
+        <text x="48" y="208" font-family="Inter" font-size="12" fill="#5F5E5A">Day 1</text><text x="124" y="208" font-family="Inter" font-size="12" fill="#5F5E5A">Day 2</text><text x="268" y="208" font-family="Inter" font-size="12" fill="#5F5E5A">Day 5</text><text x="494" y="208" font-family="Inter" font-size="12" fill="#5F5E5A">Day 12</text>
+        <text x="560" y="150" font-family="Inter" font-size="13" fill="#534AB7" font-weight="500">With spaced retrieval</text>
+        <text x="190" y="150" font-family="Inter" font-size="13" fill="#5F5E5A">Without review</text>
+      </svg>
+      <p>Illustrative: each well-timed retrieval flattens the forgetting curve.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECURITY ============ -->
+<section class="sec dark" id="security">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="tag">Enterprise Infrastructure</span>
+      <h2>Built to Institutional Standards from Day One</h2>
+    </div>
+    <div class="sgrid">
+      <article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></div><h3>100% Intellectual Property Protection</h3><p style="margin-top:12px">Your faculty’s research, notes, and lecture materials remain strictly your university’s property. They are never sold, exposed, or used to train third-party public models.</p></article>
+      <article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5L15.5 10"/></svg></div><h3>GDPR &amp; Privacy First</h3><p style="margin-top:12px">Built with strict European privacy and data protection standards, ensuring student information and analytics remain secure and anonymized.</p></article>
+      <article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0011 18.7l1-1"/></svg></div><h3>LMS &amp; Moodle Integration</h3><p style="margin-top:12px">Designed to plug directly into higher education learning management systems for painless roster sync and student onboarding.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="sec" id="about">
+  <div class="wrap about">
+    <div class="rv">
+      <span class="tag">Our Background</span>
+      <h2>Built by Computer Scientists, Engineered for Educators</h2>
+      <p>modu was founded by computer science researchers at Maynooth University, developed in direct collaboration with academic staff and language educators. Having experienced the limitations of static LMS repositories and the pitfalls of uncalibrated consumer AI first-hand, our team is building technology that strengthens higher education from within.</p>
+      <p>We are currently working with partner institutions and higher education colleges across Dublin and Ireland to deploy active learning pilots that support faculty and enhance student performance.</p>
+    </div>
+    <div class="panel rv">
+      <div class="big">Maynooth University</div>
+      <p>Founding research team</p>
+      <hr>
+      <div class="big">Dublin &amp; Ireland</div>
+      <p>Active pilots with partner institutions and higher education colleges</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="sec" id="pilot" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta rv">
+      <h2>Bring Active Courseware to Your Department</h2>
+      <p>Join our pilot program for the upcoming academic term, or schedule a discussion with our founding team.</p>
+      <div class="opts">
+        <div class="opt"><div class="k">For Deans &amp; Faculty</div><h3>Request an Institutional Pilot</h3><p>Deploy modu for a selected module or department. Includes hands-on onboarding, LMS setup, and faculty support.</p><a class="btn" href="mailto:team@modu.ie?subject=Campus%20Pilot%20Application">Apply for Campus Pilot</a></div>
+        <div class="opt"><div class="k">For Academic &amp; Investment Partners</div><h3>Speak with the Founders</h3><p>Review our early pilot outcomes, platform demonstrations, and academic roadmap.</p><a class="btn ghost" href="mailto:team@modu.ie?subject=Founder%20Meeting">Schedule Founder Meeting</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="logo" href="#top" style="display:inline;margin:0">modu<i>.</i></a><p>modu — Transforming Course Material into Active, Adaptive Learning.</p></div>
+      <div><h4>Platform</h4><a href="#overview">Overview</a><a href="#faculty">Faculty Tools</a><a href="#science">Learning Science</a><a href="#security">Security &amp; Privacy</a></div>
+      <div><h4>Contact</h4><a href="mailto:team@modu.ie">team@modu.ie</a></div>
+    </div>
+    <div class="copy"><span>© 2026 modu Technologies. Built in Ireland.</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="assets/hero.js"></script>
+<script>
+(function(){
+  var b=document.getElementById('menu'),l=document.getElementById('links');
+  b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e,i){e.style.transitionDelay=(i%3)*70+'ms';io.observe(e)});
+})();
+</script>
+</body>
+</html>

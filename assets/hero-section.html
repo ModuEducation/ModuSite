@@ -1,0 +1,108 @@
+<section class="mh" id="moduHero" role="img"
+  aria-label="Animated product story for Modu, an AI learning platform for universities. A university's messy lecture notes, past papers and quizzes are absorbed by an AI engine and turned into atomic notes, flashcards, quizzes and interactive puzzles inside a student app. A lecturer dashboard then shows which topics students struggle with and who is ahead or behind, recommends what to revisit in class, and sends extra drills back to the students.">
+<div class="mh-viewport" aria-hidden="true">
+<div class="mh-stage">
+
+<svg class="hid" aria-hidden="true">
+  <symbol id="mh-flame" viewBox="0 0 24 28"><path fill="#EF9F27" d="M12 1C13 6 19 9 19 16A7 7 0 0 1 5 16C5 12 7.5 10.5 8.5 7.5C10 9 10.5 10 11 11C12 8 11 5 12 1Z"/><path fill="#FAEEDA" d="M12 14C13 16 15 17 15 19.5A3 3 0 0 1 9 19.5C9 17.5 11 17 12 14Z"/></symbol>
+  <symbol id="mh-spark" viewBox="0 0 24 24"><path d="M12 1C12.8 7 17 11.2 23 12C17 12.8 12.8 17 12 23C11.2 17 7 12.8 1 12C7 11.2 11.2 7 12 1Z"/></symbol>
+</svg>
+
+<div id="scene">
+
+  <div class="el" id="bloom"></div>
+
+  <div class="el" id="headWrap"><h1 id="headline"><span class="w">The</span> <span class="w">future</span> <span class="w">of</span> <span class="w acc">education</span> <span class="w">is</span> <span class="w">here.</span></h1></div>
+
+  <!-- mess cards + trails are inserted before this marker (keeps z-order) -->
+  <span id="mAnchor" hidden></span>
+
+  <div class="el" id="scan"></div>
+
+  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Modu AI</span></div>
+
+  <!-- clean cards -->
+  <div class="el card cl" id="cNote">
+    <span class="pill">Atomic note</span>
+    <h3>Recursion</h3>
+    <p>A function that solves a big problem by calling itself on a smaller piece, until it reaches a base case.</p>
+    <div class="stack"><i>fact(1) · base case</i><i>fact(2)</i><i>fact(3)</i></div>
+  </div>
+
+  <div class="el" id="cFlash">
+    <div class="flip">
+      <div class="card ff front"><span class="pill">Flashcard</span><div class="big">Base case?</div><div class="hint">Tap to flip</div></div>
+      <div class="card ff back"><span class="pill ok">Answer</span><div class="ans">The condition that stops the recursion, so the function never calls itself again.</div></div>
+    </div>
+  </div>
+
+  <div class="el card cl" id="cQuiz">
+    <span class="pill">Quick check</span>
+    <h3 class="q">What does a hash map do?</h3>
+    <div class="opts">
+      <div class="opt" id="optA"><div class="lip"></div><div class="of"><span class="t t1">Sorts items alphabetically</span></div></div>
+      <div class="opt" id="optB"><div class="lip"></div><div class="lip l2"></div>
+        <div class="of"><div class="fill"></div><span class="t t1">Maps keys to values in O(1)</span><span class="t t2">Maps keys to values in O(1)</span>
+          <span class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div></div>
+    </div>
+  </div>
+
+  <div class="el card cl" id="cPuzzle">
+    <span class="pill">Interactive</span>
+    <div class="ptitle">Drop the node where it keeps the tree a valid BST</div>
+    <div class="pz" id="pz"></div>
+  </div>
+
+  <div class="el card cl" id="cStreak">
+    <div class="srow"><svg id="flame" viewBox="0 0 24 28"><use href="#mh-flame"/></svg><div><h3>7 day streak</h3><small>Lesson 3 of 4 · +10 XP</small></div></div>
+    <div class="bar"><i id="sfill"></i></div>
+  </div>
+
+  <!-- student app -->
+  <div class="el" id="phone">
+    <div class="screen">
+      <div class="notch"></div>
+      <div id="toast"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg>3 new drills from CS210</div>
+      <div class="top"><svg viewBox="0 0 24 28"><use href="#mh-flame"/></svg><b>7</b><div class="pbar"><i></i></div></div>
+      <div class="card">
+        <span class="pill">Hash maps</span>
+        <h3>What does a hash map do?</h3>
+        <span class="mo">Sorts items alphabetically</span>
+        <span class="mo">Maps keys to values in O(1)</span>
+      </div>
+      <div class="check"><div class="lip"></div><div class="bf">Check</div></div>
+    </div>
+  </div>
+
+  <!-- lecturer dashboard -->
+  <div class="el card" id="dash">
+    <div class="dh"><h4>CS210 · Week 6</h4><span class="pill">28 students</span></div>
+    <div class="dg">
+      <div>
+        <div class="lab">Topic mastery</div>
+        <div class="mrow"><div class="mtop"><span>Hash maps</span><span class="pc" id="pc1">0%</span></div><div class="track"><i class="ok" id="f1"></i></div></div>
+        <div class="mrow"><div class="mtop"><span>Recursion<em class="flag" id="flag" style="font-style:normal">Struggling</em></span><span class="pc" id="pc2">0%</span></div><div class="track"><i class="warn" id="f2"></i></div></div>
+      </div>
+      <div>
+        <div class="lab">Where the class is</div>
+        <div class="sbox" id="sbox"><div class="colh"><span>Ahead</span><span>On track</span><span>Behind</span></div></div>
+      </div>
+    </div>
+    <div class="lab">Recommendations</div>
+    <div class="recs">
+      <div class="rec" id="rec1"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg>Revisit recursion in Thursday's lecture<svg class="spk" id="spk1" viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div>
+      <div class="rec" id="rec2"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg>Push 3 extra drills to 28 students<svg class="spk" id="spk2" viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div>
+    </div>
+    <div class="dfoot"><div class="btn" id="send"><div class="lip"></div><div class="bf">Send drills</div></div></div>
+  </div>
+
+  <div class="el" id="xp">+10 XP</div>
+  <div class="el" id="cursor"><svg viewBox="0 0 24 28"><path d="M3 2L3 21L8 16.5L11.5 24.5L14.5 23.2L11 15.5L17.5 15Z" fill="#26215C" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  <div class="el" id="dot"></div>
+  <div class="el" id="ring"></div>
+  <div class="el" id="seed"></div>
+
+</div>
+</div>
+</div>
+</section>
