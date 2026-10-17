@@ -1,12 +1,12 @@
 /* ============================================================================
-   MODU HERO — GSAP 3 timeline
+   STUDY HALL HERO — GSAP 3 timeline
    ----------------------------------------------------------------------------
    TIMELINE SECTIONS (edit the T object below to retime; sub-events are offsets
    from their section start, so moving a section moves everything inside it)
 
      T.HOOK      0.00s   headline springs in, squashes to a purple seed
      T.MESS      1.60s   seed bursts into the pile of grey legacy material
-     T.ENGINE    3.55s   Modu AI pill lands, scanline sweeps, pile is absorbed
+     T.ENGINE    3.55s   Study Hall AI pill lands, scanline sweeps, pile is absorbed
      T.CLARITY   4.60s   clean cards snap out, interact, glide into the phone
      T.INSIGHTS  7.80s   camera pulls back, lecturer dashboard, drills go back
      T.RESOLVE  10.50s   everything condenses to the seed, which opens into "The"

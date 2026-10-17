@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Modu — hero animation</title>
+<title>Study Hall — hero animation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@800&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
-   MODU HERO — scoped under .mh so it can be dropped into any page.
+   STUDY HALL HERO — scoped under .mh so it can be dropped into any page.
    One instance per page (ids are used for fast lookups inside the component).
    ========================================================================== */
 body{margin:0;background:#FAFAF8}
@@ -161,13 +161,13 @@ body{margin:0;background:#FAFAF8}
 </head>
 <body>
 
-<!-- ===== MODU HERO (drop-in section) =====
+<!-- ===== STUDY HALL HERO (drop-in section) =====
   Plain HTML: keep this <section>, the <style> above and the <script> below.
   Next.js / React: wrap the <section> markup in a client component and call
   `const hero = initModuHero(ref.current)` in useEffect; return `() => hero.destroy()`.
   Framer: paste as an Embed (HTML). GSAP is loaded from cdnjs below. -->
 <section class="mh" id="moduHero" role="img"
-  aria-label="Animated product story for Modu, an AI learning platform for universities. A university's messy lecture notes, past papers and quizzes are absorbed by an AI engine and turned into atomic notes, flashcards, quizzes and interactive puzzles inside a student app. A lecturer dashboard then shows which topics students struggle with and who is ahead or behind, recommends what to revisit in class, and sends extra drills back to the students.">
+  aria-label="Animated product story for Study Hall, an AI learning platform for universities. A university's messy lecture notes, past papers and quizzes are absorbed by an AI engine and turned into atomic notes, flashcards, quizzes and interactive puzzles inside a student app. A lecturer dashboard then shows which topics students struggle with and who is ahead or behind, recommends what to revisit in class, and sends extra drills back to the students.">
 <div class="mh-viewport" aria-hidden="true">
 <div class="mh-stage">
 
@@ -187,7 +187,7 @@ body{margin:0;background:#FAFAF8}
 
   <div class="el" id="scan"></div>
 
-  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Modu AI</span></div>
+  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Study Hall AI</span></div>
 
   <!-- clean cards -->
   <div class="el card cl" id="cNote">
@@ -278,14 +278,14 @@ body{margin:0;background:#FAFAF8}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script>
 /* ============================================================================
-   MODU HERO — GSAP 3 timeline
+   STUDY HALL HERO — GSAP 3 timeline
    ----------------------------------------------------------------------------
    TIMELINE SECTIONS (edit the T object below to retime; sub-events are offsets
    from their section start, so moving a section moves everything inside it)
 
      T.HOOK      0.00s   headline springs in, squashes to a purple seed
      T.MESS      1.60s   seed bursts into the pile of grey legacy material
-     T.ENGINE    3.55s   Modu AI pill lands, scanline sweeps, pile is absorbed
+     T.ENGINE    3.55s   Study Hall AI pill lands, scanline sweeps, pile is absorbed
      T.CLARITY   4.60s   clean cards snap out, interact, glide into the phone
      T.INSIGHTS  7.80s   camera pulls back, lecturer dashboard, drills go back
      T.RESOLVE  10.50s   everything condenses to the seed, which opens into "The"
