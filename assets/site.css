@@ -195,3 +195,25 @@ footer{padding:64px 0 40px}
   .cta{padding:48px 22px;border-radius:26px}
   .fgrid{grid-template-columns:1fr}
 }
+
+/* ---------- blog ---------- */
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.post{display:flex;flex-direction:column;align-items:flex-start;gap:12px;background:#fff;border:1px solid var(--line);border-bottom-width:4px;border-radius:22px;padding:26px;text-decoration:none;transition:transform .15s,border-color .15s}
+.post:hover{transform:translateY(-3px);border-color:var(--pm)}
+.post h3{font-size:21px;line-height:1.2}
+.post p{font-size:15px;color:var(--ink2);flex:1}
+.meta{font:500 13px/1 Inter,sans-serif;color:var(--ink2)}
+.pillx{display:inline-block;font:500 11px/1 Inter,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--p);background:var(--pt);border-radius:999px;padding:5px 10px}
+.blog-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:40px}
+.blog-head .head{margin-bottom:0}
+.art{padding:56px 0 88px}
+.art .wrap{max-width:720px}
+.art .back{display:block;margin-bottom:28px;font:500 14px/1 Inter,sans-serif;color:var(--p);text-decoration:none}
+.art h1{font-size:clamp(32px,5vw,48px);line-height:1.1;margin:16px 0 14px}
+.art .meta{margin-bottom:28px}
+.art .lede{font-size:20px;color:var(--ink);margin-bottom:28px;line-height:1.5}
+.art p{margin:0 0 18px;color:#3b3858}
+.art h3{font-size:24px;margin:34px 0 10px}
+.artcta{margin-top:48px;background:var(--pt);border:1px solid #D8D5F7;border-radius:24px;padding:30px}
+.artcta h3{margin:0 0 8px}.artcta p{margin-bottom:20px}
+@media (max-width:960px){.posts{grid-template-columns:1fr}}
