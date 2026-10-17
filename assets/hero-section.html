@@ -1,4 +1,4 @@
-<section class="mh" id="moduHero" role="img"
+<section class="mh" id="studyhallHero" role="img"
   aria-label="Animated product story for Study Hall, an AI learning platform for universities. A university's messy lecture notes, past papers and quizzes are absorbed by an AI engine and turned into atomic notes, flashcards, quizzes and interactive puzzles inside a student app. A lecturer dashboard then shows which topics students struggle with and who is ahead or behind, recommends what to revisit in class, and sends extra drills back to the students.">
 <div class="mh-viewport" aria-hidden="true">
 <div class="mh-stage">
@@ -17,9 +17,11 @@
   <!-- mess cards + trails are inserted before this marker (keeps z-order) -->
   <span id="mAnchor" hidden></span>
 
+  <div class="el" id="tally"><b id="tn">0</b><span>pages of notes, papers &amp; slides</span></div>
+
   <div class="el" id="scan"></div>
 
-  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Study Hall AI</span></div>
+  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Study Hall</span></div>
 
   <!-- clean cards -->
   <div class="el card cl" id="cNote">
@@ -70,6 +72,8 @@
         <span class="mo">Sorts items alphabetically</span>
         <span class="mo">Maps keys to values in O(1)</span>
       </div>
+      <div class="up"><div class="ic"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div><div><b>Recursion drills</b><small>Up next · 5 min</small></div><span class="badge" id="badge">3</span></div>
+      <div class="up alt"><div class="ic"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div><div><b>Flashcards</b><small>12 due today</small></div></div>
       <div class="check"><div class="lip"></div><div class="bf">Check</div></div>
     </div>
   </div>
@@ -82,6 +86,7 @@
         <div class="lab">Topic mastery</div>
         <div class="mrow"><div class="mtop"><span>Hash maps</span><span class="pc" id="pc1">0%</span></div><div class="track"><i class="ok" id="f1"></i></div></div>
         <div class="mrow"><div class="mtop"><span>Recursion<em class="flag" id="flag" style="font-style:normal">Struggling</em></span><span class="pc" id="pc2">0%</span></div><div class="track"><i class="warn" id="f2"></i></div></div>
+        <div class="mrow"><div class="mtop"><span>Graphs</span><span class="pc" id="pc3">0%</span></div><div class="track"><i class="mid" id="f3"></i></div></div>
       </div>
       <div>
         <div class="lab">Where the class is</div>

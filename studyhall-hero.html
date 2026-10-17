@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Study Hall — hero animation</title>
+<title>Studyhall — hero animation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@800&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
-   STUDY HALL HERO — scoped under .mh so it can be dropped into any page.
+   STUDYHALL HERO — scoped under .mh so it can be dropped into any page.
    One instance per page (ids are used for fast lookups inside the component).
    ========================================================================== */
 body{margin:0;background:#FAFAF8}
@@ -49,11 +49,25 @@ body{margin:0;background:#FAFAF8}
 
 /* ---------- the mess ---------- */
 .mh .mc{background:#D3D1C7;border:1px solid #B4B2A9;border-radius:4px;overflow:hidden;color:#5F5E5A;font-family:Georgia,'Times New Roman',serif}
-.mh .mc .mi{padding:9px 10px;will-change:transform}
+.mh .mc .mi{padding:9px 10px}
 .mh .mc .mt{font-weight:700;font-size:8.5px;line-height:1.15;margin-bottom:4px;color:#4a4944;letter-spacing:.01em}
-.mh .mc .mb{font-size:7.4px;line-height:1.2;white-space:pre-line}
+.mh .mc .mb{font-size:7.6px;line-height:1.22;white-space:pre-line}
 .mh .mc.code .mb{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:7px;white-space:pre}
 .mh .mc.slide{background:#DCDAD0}
+.mh .mc.slide .mt{font:700 11px/1.1 Georgia,serif;border-bottom:1px solid #B4B2A9;padding-bottom:3px;margin-bottom:5px}
+.mh .mc.paper{background:#E0DED4}
+.mh .mc.tbl .mb{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:6.6px;line-height:1.3;white-space:pre}
+.mh .mc.mail{background:#D9D7CC}
+.mh .mc.mail .mb{font-family:Arial,Helvetica,sans-serif;font-size:7.2px}
+.mh .mc.sticky{background:#C4C1B6;border-color:#A9A69B;border-radius:2px;box-shadow:none}
+.mh .mc.sticky .mi{padding:10px}
+.mh .mc.sticky .mb{font:italic 700 12px/1.15 Georgia,serif;color:#6b685f;white-space:pre-line}
+.mh .mc .hl{background:#B4B2A9;padding:0 1px}
+.mh .mc .st{text-decoration:line-through}
+.mh .mc svg{display:block;margin-top:5px}
+.mh #tally{display:flex;align-items:baseline;gap:7px;white-space:nowrap;background:#D3D1C7;border:1px solid #B4B2A9;border-radius:999px;padding:9px 16px;color:#5F5E5A;font:500 13px/1 Inter,sans-serif}
+.mh #tally b{font:800 17px/1 Nunito,Inter,sans-serif;color:#4a4944;min-width:46px;text-align:right;font-variant-numeric:tabular-nums}
+.mh.m #tally{font-size:11px;padding:8px 13px}
 
 /* ---------- clean cards ---------- */
 .mh #cNote{width:270px}
@@ -117,7 +131,16 @@ body{margin:0;background:#FAFAF8}
 .mh #phone .pbar i{display:block;height:100%;width:62%;background:var(--p);border-radius:6px}
 .mh #phone .card{padding:14px}
 .mh #phone .card h3{font-size:19px;margin:10px 0 12px}
-.mh .mo{display:block;font:500 12.5px/1 Inter,sans-serif;padding:13px 12px;border:1px solid var(--line);border-bottom-width:3px;border-radius:12px;margin-bottom:8px;background:#fff;color:var(--ink)}
+.mh .mo{display:block;font:500 11.5px/1 Inter,sans-serif;white-space:nowrap;padding:13px 10px;border:1px solid var(--line);border-bottom-width:3px;border-radius:12px;margin-bottom:8px;background:#fff;color:var(--ink)}
+.mh #phone .up{position:relative;display:flex;align-items:center;gap:10px;margin-top:14px;padding:12px;border-radius:14px;background:var(--pt);border:1px solid #D8D5F7;border-bottom-width:3px}
+.mh #phone .up.alt{background:#fff;border-color:var(--line);margin-top:8px}
+.mh #phone .up.alt .ic{background:var(--pt)}
+.mh #phone .up.alt .ic svg{fill:var(--p)}
+.mh #phone .up .ic{width:30px;height:30px;border-radius:9px;background:var(--p);display:grid;place-items:center;flex:none}
+.mh #phone .up .ic svg{width:15px;height:15px;fill:#fff}
+.mh #phone .up b{display:block;font:800 13px/1.1 Nunito,Inter,sans-serif;color:var(--ink)}
+.mh #phone .up small{display:block;font-size:10.5px;color:var(--ink2);margin-top:2px}
+.mh #phone .up .badge{position:absolute;right:10px;top:50%;margin-top:-11px;width:22px;height:22px;border-radius:50%;background:var(--warn);color:#fff;display:grid;place-items:center;font:800 12px/1 Nunito,Inter,sans-serif}
 .mh #phone .check{position:absolute;left:16px;right:16px;bottom:18px;height:47px}
 .mh #phone .check .lip{position:absolute;left:0;right:0;top:3px;height:44px;border-radius:14px;background:var(--pd)}
 .mh #phone .check .bf{position:absolute;left:0;right:0;top:0;height:44px;border-radius:14px;background:var(--p);color:#fff;display:grid;place-items:center;font:800 15px/1 Nunito,Inter,sans-serif}
@@ -140,6 +163,7 @@ body{margin:0;background:#FAFAF8}
 .mh .track i{display:block;height:100%;border-radius:6px;transform-origin:0 50%}
 .mh .track i.ok{background:var(--ok)}
 .mh .track i.warn{background:var(--warn)}
+.mh .track i.mid{background:var(--pm)}
 .mh .sbox{position:relative;height:124px}
 .mh .colh{position:absolute;left:0;right:0;top:0;display:flex}
 .mh .colh span{flex:1;text-align:center;font:500 11px/1 Inter,sans-serif}
@@ -161,13 +185,13 @@ body{margin:0;background:#FAFAF8}
 </head>
 <body>
 
-<!-- ===== STUDY HALL HERO (drop-in section) =====
+<!-- ===== STUDYHALL HERO (drop-in section) =====
   Plain HTML: keep this <section>, the <style> above and the <script> below.
   Next.js / React: wrap the <section> markup in a client component and call
-  `const hero = initModuHero(ref.current)` in useEffect; return `() => hero.destroy()`.
+  `const hero = initStudyhallHero(ref.current)` in useEffect; return `() => hero.destroy()`.
   Framer: paste as an Embed (HTML). GSAP is loaded from cdnjs below. -->
-<section class="mh" id="moduHero" role="img"
-  aria-label="Animated product story for Study Hall, an AI learning platform for universities. A university's messy lecture notes, past papers and quizzes are absorbed by an AI engine and turned into atomic notes, flashcards, quizzes and interactive puzzles inside a student app. A lecturer dashboard then shows which topics students struggle with and who is ahead or behind, recommends what to revisit in class, and sends extra drills back to the students.">
+<section class="mh" id="studyhallHero" role="img"
+  aria-label="Animated product story for Studyhall, an AI learning platform for universities. A university's messy lecture notes, past papers and quizzes are absorbed by an AI engine and turned into atomic notes, flashcards, quizzes and interactive puzzles inside a student app. A lecturer dashboard then shows which topics students struggle with and who is ahead or behind, recommends what to revisit in class, and sends extra drills back to the students.">
 <div class="mh-viewport" aria-hidden="true">
 <div class="mh-stage">
 
@@ -185,9 +209,11 @@ body{margin:0;background:#FAFAF8}
   <!-- mess cards + trails are inserted before this marker (keeps z-order) -->
   <span id="mAnchor" hidden></span>
 
+  <div class="el" id="tally"><b id="tn">0</b><span>pages of notes, papers &amp; slides</span></div>
+
   <div class="el" id="scan"></div>
 
-  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Study Hall AI</span></div>
+  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Studyhall</span></div>
 
   <!-- clean cards -->
   <div class="el card cl" id="cNote">
@@ -238,6 +264,8 @@ body{margin:0;background:#FAFAF8}
         <span class="mo">Sorts items alphabetically</span>
         <span class="mo">Maps keys to values in O(1)</span>
       </div>
+      <div class="up"><div class="ic"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div><div><b>Recursion drills</b><small>Up next · 5 min</small></div><span class="badge" id="badge">3</span></div>
+      <div class="up alt"><div class="ic"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div><div><b>Flashcards</b><small>12 due today</small></div></div>
       <div class="check"><div class="lip"></div><div class="bf">Check</div></div>
     </div>
   </div>
@@ -250,6 +278,7 @@ body{margin:0;background:#FAFAF8}
         <div class="lab">Topic mastery</div>
         <div class="mrow"><div class="mtop"><span>Hash maps</span><span class="pc" id="pc1">0%</span></div><div class="track"><i class="ok" id="f1"></i></div></div>
         <div class="mrow"><div class="mtop"><span>Recursion<em class="flag" id="flag" style="font-style:normal">Struggling</em></span><span class="pc" id="pc2">0%</span></div><div class="track"><i class="warn" id="f2"></i></div></div>
+        <div class="mrow"><div class="mtop"><span>Graphs</span><span class="pc" id="pc3">0%</span></div><div class="track"><i class="mid" id="f3"></i></div></div>
       </div>
       <div>
         <div class="lab">Where the class is</div>
@@ -278,14 +307,14 @@ body{margin:0;background:#FAFAF8}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script>
 /* ============================================================================
-   STUDY HALL HERO — GSAP 3 timeline
+   STUDYHALL HERO — GSAP 3 timeline
    ----------------------------------------------------------------------------
    TIMELINE SECTIONS (edit the T object below to retime; sub-events are offsets
    from their section start, so moving a section moves everything inside it)
 
      T.HOOK      0.00s   headline springs in, squashes to a purple seed
      T.MESS      1.60s   seed bursts into the pile of grey legacy material
-     T.ENGINE    3.55s   Study Hall AI pill lands, scanline sweeps, pile is absorbed
+     T.ENGINE    3.50s   Studyhall pill lands, scanline sweeps, pile is absorbed
      T.CLARITY   4.60s   clean cards snap out, interact, glide into the phone
      T.INSIGHTS  7.80s   camera pulls back, lecturer dashboard, drills go back
      T.RESOLVE  10.50s   everything condenses to the seed, which opens into "The"
@@ -294,9 +323,9 @@ body{margin:0;background:#FAFAF8}
 (function () {
   'use strict';
 
-  const T = { HOOK: 0, MESS: 1.6, ENGINE: 3.55, CLARITY: 4.6, INSIGHTS: 7.8, RESOLVE: 10.5, END: 12 };
+  const T = { HOOK: 0, MESS: 1.6, ENGINE: 3.5, CLARITY: 4.6, INSIGHTS: 7.8, RESOLVE: 10.5, END: 12 };
 
-  function initModuHero(root) {
+  function initStudyhallHero(root) {
     const gs = window.gsap;
     if (!gs || !root) return { destroy() {}, timeline() { return null; } };
 
@@ -313,30 +342,87 @@ body{margin:0;background:#FAFAF8}
       quiz: q('#cQuiz'), puzzle: q('#cPuzzle'), streak: q('#cStreak'), cursor: q('#cursor'), xp: q('#xp'),
       phone: q('#phone'), toast: q('#toast'), dash: q('#dash'), dot: q('#dot'), flame: q('#flame'),
       sfill: q('#sfill'), optA: q('#optA'), optB: q('#optB'), anchor: q('#mAnchor'), pz: q('#pz'),
-      sbox: q('#sbox'), send: q('#send')
+      sbox: q('#sbox'), send: q('#send'), tally: q('#tally'), badge: q('#badge')
     };
+    const tallyN = q('#tn');
     const oB = { of: q('.of', el.optB), fill: q('.fill', el.optB), t1: q('.t1', el.optB), t2: q('.t2', el.optB), l2: q('.l2', el.optB), chk: q('.chk', el.optB) };
     const dq = {
-      f1: q('#f1'), f2: q('#f2'), p1: q('#pc1'), p2: q('#pc2'), flag: q('#flag'), colh: qa('.colh span'),
+      f1: q('#f1'), f2: q('#f2'), f3: q('#f3'), p1: q('#pc1'), p2: q('#pc2'), p3: q('#pc3'), flag: q('#flag'), colh: qa('.colh span'),
       rec1: q('#rec1'), rec2: q('#rec2'), spk1: q('#spk1'), spk2: q('#spk2'), sendF: q('.bf', el.send)
     };
 
-    /* ---------- the "before": grey legacy material ---------- */
+    /* ---------- the "before": grey legacy material ----------
+       27 pieces: lecture pages, past papers, pseudocode, formula sheets, slides, quizzes,
+       a gradebook, an email printout, a timetable, a scanned figure and three sticky notes.
+       d = desktop [x, y, rotation], m = mobile (null = not shown on mobile). DOM order = z-order. */
+    const SVG_TREE = '<svg width="150" height="46" viewBox="0 0 150 46" fill="none" stroke="#8d8a80" stroke-width="1.2"><g><path d="M75 8L40 24M75 8L110 24M40 24L22 40M40 24L58 40M110 24L128 40"/></g><g fill="#D3D1C7"><circle cx="75" cy="8" r="6"/><circle cx="40" cy="24" r="6"/><circle cx="110" cy="24" r="6"/><circle cx="22" cy="40" r="5"/><circle cx="58" cy="40" r="5"/><circle cx="128" cy="40" r="5"/></g></svg>';
     const MESS = [
-      { w: 190, h: 170, c: '', t: 'CS210 · Lecture 7 — Recursion', b: '7.1 A recursive function is defined in terms of itself. Every recursive definition requires (i) one or more base cases, solved directly, and (ii) a recursive step that reduces the problem towards a base case. Failure to satisfy (ii) ⇒ non-termination. See also tail recursion §7.4, mutual recursion §7.5 and the link to induction (L2). Ex. 7.1.1  n! = n·(n−1)!, 0! = 1. Show fact(n) terminates ∀ n ∈ ℕ. Call stack depth O(n) — large n may cause stack overflow. NB: memoisation (§7.6) not examinable unless stated in tutorial 4. Revision: re-read pp. 112–131.' },
-      { w: 200, h: 150, c: '', t: 'UNIVERSITY EXAMINATION 2019', b: 'CS210 Data Structures &amp; Algorithms\nTime allowed: 2 hours. Answer ALL of Section A and TWO of Section B.\nQ4 (a) Define a hash table. [3]\n(b) Prove that, under simple uniform hashing, the expected cost of an unsuccessful search is Θ(1 + α). [9]\n(c) Contrast open addressing with chaining. [4]\nQ5 (a) State the Master Theorem. [4] (b) Hence solve T(n) = 4T(n/2) + n². [6]' },
-      { w: 190, h: 160, c: 'code', t: 'recursive_solve.pseudo', b: 'function SOLVE(A, lo, hi)\n  if hi − lo &lt; 2 then\n    return A[lo]\n  mid ← ⌊(lo+hi)/2⌋\n  L ← SOLVE(A, lo, mid)\n  R ← SOLVE(A, mid, hi)\n  if L.key &lt; R.key then\n    return MERGE(L, R, lo, mid, hi)\n  else\n    return MERGE(R, L, lo, mid, hi)\n  end if\nend function\n// T(n)=2T(n/2)+Θ(n)' },
-      { w: 200, h: 110, c: '', t: 'Formula sheet', b: 'T(n) = 2T(n/2) + Θ(n) ⇒ Θ(n log n)\nΣ i=1..n i = n(n+1)/2   Σ 2^i = 2^(n+1) − 1\nH(X) = −Σ p(x) log₂ p(x)\nlog_b a = ln a / ln b   n! ≈ √(2πn)(n/e)^n\nMaster: a ≥ 1, b &gt; 1, f(n) = Θ(n^{log_b a} log^k n)\n⇒ T(n) = Θ(n^{log_b a} log^{k+1} n)\nE[X] = Σ x·P(X=x)' },
-      { w: 210, h: 130, c: 'slide', t: 'Hash Tables (cont.)', b: '• Hash function h: U → {0,…,m−1}\n• Collisions: chaining / open addressing\n• Load factor α = n/m\n• Linear probing, quadratic probing, double hashing\n• Resize when α &gt; 0.75 (amortised O(1))\n• Universal hashing  • Perfect hashing (FKS)\n• Cuckoo hashing  • Robin Hood hashing\n• Deletion: tombstones!!\n• See Cormen Ch. 11  • Tutorial 6 Q3–Q9' },
-      { w: 180, h: 170, c: '', t: 'CS210 · Lecture 9 — Graphs', b: '9.1 A graph G = (V, E) consists of a set V of vertices and a set E ⊆ V×V of edges. G is directed if E is a set of ordered pairs. Representations: adjacency matrix Θ(|V|²) space; adjacency list Θ(|V|+|E|). BFS explores level by level using a queue; DFS uses a stack (or recursion). Dijkstra: non-negative weights only. Bellman–Ford handles negative weights, detects negative cycles in O(|V||E|). Topological sort exists iff G is a DAG. MST: Kruskal (union–find) / Prim (priority queue)…' },
-      { w: 190, h: 150, c: '', t: 'Quiz 3 (2018) — Name: ________', b: 'Q1. Worst-case time of quicksort?\n (a) O(n)  (b) O(n log n)  (c) O(n²)  (d) O(2ⁿ)\nQ2. Which structure gives O(1) average lookup?\n (a) BST (b) hash table (c) heap (d) list\nQ3. Height of a complete binary tree with n nodes?\nQ4. Define amortised cost.\nQ5. True/False: Dijkstra works with negative edges.\nQ6. Trace insertion sort on [5,2,4,6,1,3].\nQ7. Explain the base case of mergesort.' },
-      { w: 180, h: 140, c: '', t: 'Tutorial 5 — Trees', b: '1. Draw the BST obtained by inserting 8, 3, 10, 1, 6, 14, 4, 7, 13 in that order.\n2. Define the height of a node and of a tree.\n3. Show that a binary tree with n nodes has height ≥ ⌊log₂ n⌋.\n4. Give pseudocode for in-order traversal (recursive and iterative).\n5. Delete 3 and then 8 from your tree from Q1.\n6. What is the worst-case height of an AVL tree?\n7. Prove the AVL rotation preserves BST order.' }
+      /* ---- row 1 ---- */
+      { w: 190, h: 172, t: 'CS210 · Lecture 7 — Recursion', d: [-600, -238, -7], m: [-100, -282, -7],
+        b: '7.1 A recursive function is defined in terms of itself. Every recursive definition requires (i) one or more <span class="hl">base cases</span>, solved directly, and (ii) a recursive step that reduces the problem towards a base case. Failure to satisfy (ii) ⇒ non-termination. See also tail recursion §7.4, mutual recursion §7.5 and the link to induction (L2). Ex. 7.1.1  n! = n·(n−1)!, 0! = 1. Show fact(n) terminates ∀ n ∈ ℕ. Call stack depth O(n) — large n may cause stack overflow. NB: memoisation (§7.6) not examinable unless stated in tutorial 4. Revision: re-read pp. 112–131.' },
+      { w: 186, h: 178, t: 'CS210 · Lecture 9 — Graphs', d: [-362, -252, 5], m: [108, -272, -5],
+        b: '9.1 A graph G = (V, E) consists of a set V of vertices and a set E ⊆ V×V of edges. G is directed if E is a set of ordered pairs. Representations: adjacency matrix Θ(|V|²) space; adjacency list Θ(|V|+|E|). BFS explores level by level using a queue; DFS uses a stack (or recursion). Dijkstra: <span class="hl">non-negative weights only</span>. Bellman–Ford handles negative weights, detects negative cycles in O(|V||E|). Topological sort exists iff G is a DAG. MST: Kruskal (union–find) / Prim (priority queue)…' },
+      { w: 196, h: 170, t: 'Lecture 4 — Dynamic Programming', d: [-112, -242, -4], m: [0, -196, -4],
+        b: '4.1 Optimal substructure and overlapping subproblems. Naïve Fibonacci: F(n) = F(n−1) + F(n−2) recomputes F(k) exponentially often, T(n) = Θ(φⁿ). Memoise → Θ(n) time, Θ(n) space. Bottom-up: fill table in dependency order. 0/1 Knapsack: V[i][w] = max(V[i−1][w], vᵢ + V[i−1][w−wᵢ]), Θ(nW) — pseudo-polynomial! Longest common subsequence: c[i][j] = c[i−1][j−1]+1 if xᵢ = yⱼ else max(c[i−1][j], c[i][j−1]). Reconstruct by backtracking. Matrix-chain: O(n³). See Cormen Ch. 15, tutorial 7.' },
+      { w: 190, h: 160, t: 'Lecture 11 — Complexity classes', d: [138, -250, 6], m: [108, -178, 7],
+        b: 'P = problems decidable in polynomial time. NP = problems whose solutions are verifiable in polynomial time. Clearly P ⊆ NP; whether P = NP is open ($1M, Clay Institute). A problem is NP-complete if it is in NP and every problem in NP reduces to it in poly time (≤ₚ). Cook–Levin: SAT is NP-complete. Hence SAT ≤ₚ 3-SAT ≤ₚ CLIQUE ≤ₚ VERTEX-COVER. To show L is NP-hard, reduce <span class="hl">from</span> a known NP-hard problem <span class="hl">to</span> L (not the other way!). Approximation: 2-approx for vertex cover.' },
+      { w: 210, h: 160, c: 'paper', t: 'UNIVERSITY EXAMINATION 2019', d: [388, -236, -6], m: [5, -296, 5],
+        b: 'CS210 Data Structures &amp; Algorithms\nTime allowed: 2 hours. Answer ALL of Section A and TWO of Section B.\nQ4 (a) Define a hash table. [3]\n(b) <b>Prove that</b>, under simple uniform hashing, the expected cost of an unsuccessful search is Θ(1 + α). [9]\n(c) Contrast open addressing with chaining. [4]\nQ5 (a) State the Master Theorem. [4] (b) Hence solve T(n) = 4T(n/2) + n². [6]\nQ6 (a) Define a red-black tree. [4]' },
+      { w: 200, h: 156, c: 'paper', t: 'RESIT EXAMINATION 2018 — Section B', d: [632, -250, 8], m: null,
+        b: 'Q3 (a) Describe the DFS-based algorithm for topological sort and state its running time. [5]\n(b) Hence order the courses in the prerequisite graph below. [6]\nQ4 (a) Define the rank of a node in union–find. [3]\n(b) <b>Prove that</b> the height of a red-black tree with n internal nodes is at most 2 log₂(n+1). [8]\n(c) Why does this guarantee O(log n) search? [3]\nQ5 Discuss the trade-offs between BST variants. [10]' },
+
+      /* ---- row 2 ---- */
+      { w: 190, h: 168, c: 'code', t: 'recursive_solve.pseudo', d: [-620, -78, 6], m: [-110, -182, 6],
+        b: 'function SOLVE(A, lo, hi)\n  if hi − lo &lt; 2 then\n    return A[lo]\n  mid ← ⌊(lo+hi)/2⌋\n  L ← SOLVE(A, lo, mid)\n  R ← SOLVE(A, mid, hi)\n  if L.key &lt; R.key then\n    return MERGE(L, R, lo, mid, hi)\n  else\n    return MERGE(R, L, lo, mid, hi)\n  end if\nend function\n// T(n)=2T(n/2)+Θ(n)\n// TODO: check base case lo=hi' },
+      { w: 188, h: 168, c: 'code', t: 'dfs_visit.pseudo', d: [-378, -92, -5], m: [-105, -84, -5],
+        b: 'DFS(G)\n  for each u ∈ G.V\n    u.color ← WHITE; u.π ← NIL\n  time ← 0\n  for each u ∈ G.V\n    if u.color = WHITE\n      DFS-VISIT(G, u)\n\nDFS-VISIT(G, u)\n  time ← time + 1; u.d ← time\n  u.color ← GRAY\n  for each v ∈ G.Adj[u]\n    if v.color = WHITE\n      v.π ← u; DFS-VISIT(G, v)\n  u.color ← BLACK\n  time ← time + 1; u.f ← time' },
+      { w: 196, h: 168, c: 'code', t: 'hashtable.py', d: [-132, -98, 4], m: [2, -100, 4],
+        b: 'class HashTable:\n    def __init__(self, m=8):\n        self.t = [None] * m; self.n = 0\n    def _h(self, k):\n        return hash(k) % len(self.t)\n    def insert(self, k, v):\n        if self.n / len(self.t) > 0.75:\n            self._resize()      # amortised O(1)\n        i = self._h(k)\n        while self.t[i] is not None:\n            if self.t[i][0] == k: break\n            i = (i + 1) % len(self.t)  # linear probe\n        else: self.n += 1\n        self.t[i] = (k, v)' },
+      { w: 206, h: 128, t: 'Formula sheet', d: [128, -92, -3], m: [110, -70, -6],
+        b: 'T(n) = 2T(n/2) + Θ(n) ⇒ Θ(n log n)\nΣ i=1..n i = n(n+1)/2   Σ 2^i = 2^(n+1) − 1\nH(X) = −Σ p(x) log₂ p(x)\nlog_b a = ln a / ln b   n! ≈ √(2πn)(n/e)^n\nMaster: a ≥ 1, b &gt; 1, f(n) = Θ(n^{log_b a} log^k n)\n⇒ T(n) = Θ(n^{log_b a} log^{k+1} n)\nE[X] = Σ x·P(X=x)    Var(X) = E[X²] − E[X]²\nP(A|B) = P(B|A)P(A) / P(B)' },
+      { w: 200, h: 150, c: 'slide', t: 'Recurrences — summary', d: [376, -84, 7], m: null,
+        b: '• Case 1: f(n) = O(n^{log_b a − ε}) ⇒ T(n) = Θ(n^{log_b a})\n• Case 2: f(n) = Θ(n^{log_b a} log^k n) ⇒ …log^{k+1} n\n• Case 3: f(n) = Ω(n^{log_b a + ε}) AND regularity\n   a·f(n/b) ≤ c·f(n), c &lt; 1\n• Substitution method: guess + induct\n• Recursion tree: sum per level\n• Akra–Bazzi (not examinable)\n• Gap between cases 1–2, 2–3!!' },
+      { w: 210, h: 152, c: 'slide', t: 'Hash Tables (cont.)', d: [624, -78, -6], m: [-100, 20, 5],
+        b: '• Hash function h: U → {0,…,m−1}\n• Collisions: chaining / open addressing\n• Load factor α = n/m\n• Linear probing, quadratic probing, double hashing\n• Resize when α &gt; 0.75 (amortised O(1))\n• Universal hashing  • Perfect hashing (FKS)\n• Cuckoo hashing  • Robin Hood hashing\n• Deletion: tombstones!!\n• See Cormen Ch. 11  • Tutorial 6 Q3–Q9' },
+
+      /* ---- row 3 ---- */
+      { w: 200, h: 160, c: 'slide', t: 'Agenda — Week 6 (45 slides)', d: [-604, 84, -5], m: [5, 10, -6],
+        b: '• Recap of weeks 1–5 (arrays, lists, stacks, queues, trees)\n• Admin: assignment 2 deadline moved → Fri\n• Hash tables: motivation, direct addressing\n• Hash functions: division, multiplication, universal\n• Collision resolution (3 methods)\n• Analysis: expected cost under SUHA\n• Worked examples ×6\n• Lab 4 preview  • Reading list (see Moodle)\n• Q&amp;A  • Course feedback survey' },
+      { w: 190, h: 140, c: 'slide', t: 'Sorting: a survey', d: [-352, 66, 7], m: [108, 35, 6],
+        b: '• Insertion O(n²) • Selection O(n²) • Bubble O(n²)\n• Merge O(n log n) • Heap O(n log n) • Quick O(n²) worst\n• Counting O(n+k) • Radix O(d(n+k)) • Bucket\n• Stability? In-place? Adaptive?\n• Comparison lower bound Ω(n log n) (decision tree)\n• Timsort: runs + galloping merge\n• Tutorial 3, 8' },
+      { w: 190, h: 150, t: 'Quiz 3 (2018) — Name: ________', d: [-102, 62, -4], m: [-105, 125, -5],
+        b: 'Q1. Worst-case time of quicksort?\n (a) O(n)  (b) O(n log n)  (c) O(n²)  (d) O(2ⁿ)\nQ2. Which structure gives O(1) average lookup?\n (a) BST (b) hash table (c) heap (d) list\nQ3. Height of a complete binary tree with n nodes?\nQ4. Define amortised cost.\nQ5. True/False: Dijkstra works with negative edges.\nQ6. Trace insertion sort on [5,2,4,6,1,3].\nQ7. Explain the base case of mergesort.' },
+      { w: 182, h: 146, t: 'Tutorial 5 — Trees', d: [150, 72, 5], m: [0, 115, 7],
+        b: '1. Draw the BST obtained by inserting 8, 3, 10, 1, 6, 14, 4, 7, 13 in that order.\n2. Define the height of a node and of a tree.\n3. Show that a binary tree with n nodes has height ≥ ⌊log₂ n⌋.\n4. Give pseudocode for in-order traversal (recursive and iterative).\n5. Delete 3 and then 8 from your tree from Q1.\n6. What is the worst-case height of an AVL tree?\n7. Prove the AVL rotation preserves BST order.' },
+      { w: 176, h: 130, t: 'Quiz 5 (2017)', d: [398, 66, -7], m: [112, 242, 5],
+        b: 'Q1. Which traversal of a BST yields sorted order?\nQ2. What is the load factor of a table with 12 keys and 16 slots?\nQ3. State two disadvantages of linear probing.\nQ4. Why is hashing unsuitable for range queries?\nQ5. Sketch the heap after inserting 5, 3, 8, 1.\nQ6. What does "amortised" mean?' },
+      { w: 200, h: 152, c: 'tbl', t: 'CS210 gradebook — Sem 1 (DRAFT)', d: [634, 82, 4], m: null,
+        b: 'ID       A1  A2  MID  Q1 Q2 Q3  FIN  Σ\n21304518  62  71  58   7  6  8   —   —\n21307731  45  50  39   4  5  3   —   —\n21302286  88  91  84   9  9  10  —   —\n21309004  71  64  66   8  7  7   —   —\n21305517  53  58  41   5  4  6   —   —\n21308862  79  83  77   9  8  8   —   —\n21301149  38  44  35   3  5  4   —   —\n21306673  66  70  62   7  8  7   —   —\nAVG       62  67  58   —  —  —   —   —' },
+
+      /* ---- row 4 ---- */
+      { w: 204, h: 150, c: 'mail', t: 'FW: RE: RE: Reading list wk 6–8 (UPDATED v3)', d: [-596, 232, 7], m: [110, 140, -4],
+        b: 'From: Prof. A. Byrne\nTo: CS210-all\nCc: tutors; admin\n\nHi all, apologies — the earlier list had the wrong chapter for week 7 (should be Ch. 15 NOT Ch. 12). Please disregard the PDF sent Monday and use the attached instead (v3). Tutorial 6 moves to Thursday 4pm, Room 1.14 (not 2.07). Lab groups unchanged except where noted in the sheet. Assignment 2 deadline is now Friday 5pm. Late penalties apply as per the course handbook…\n\n-- Sent from my phone' },
+      { w: 196, h: 140, c: 'tbl', t: 'Timetable — Semester 1', d: [-360, 224, -6], m: [-95, 235, 6],
+        b: '     MON    TUE    WED    THU    FRI\n9   CS210  —      MA201  CS210  —\n10  LAB-4  ST101  LAB-4  ST101  MA201\n11  —      CS210  —      —      CS230\n12  LUNCH  LUNCH  LUNCH  LUNCH  LUNCH\n2   CS230  MA201  CS230  TUT-6  —\n3   —      —      ST101  —      LAB-2\n4   TUT-5  —      —      TUT-6  —' },
+      { w: 190, h: 142, c: 'paper', t: 'Fig. 7.3 — Call stack for fact(4)', d: [-118, 238, 5], m: [10, 225, -5],
+        b: 'fact(4) → 4 · fact(3)\n   fact(3) → 3 · fact(2)\n      fact(2) → 2 · fact(1)\n         fact(1) → 1  [base]\nReturn values unwind: 1, 2, 6, 24.' },
+      { w: 196, h: 150, c: 'paper', t: 'PAST PAPER 2016 — Q2', d: [136, 232, -5], m: null,
+        b: 'Q2 (a) Insert the keys 12, 44, 13, 88, 23, 94, 11, 39, 20, 16 into a hash table of size 11 using h(k) = k mod 11 and (i) chaining, (ii) linear probing. [6]\n(b) Compute the load factor after each insertion. [4]\n(c) <b>Prove that</b> open addressing needs α &lt; 1. [5]\n(d) Compare the probe sequences under double hashing. [5]' },
+      { w: 190, h: 150, t: 'Lecture 2 — Induction &amp; invariants', d: [388, 226, 6], m: null,
+        b: '2.1 To prove P(n) for all n ≥ n₀: (i) base: P(n₀); (ii) step: P(k) ⇒ P(k+1). Strong induction assumes P(j) for all n₀ ≤ j ≤ k. Loop invariants: initialisation, maintenance, termination. Example: insertion sort — at the start of iteration j, A[1..j−1] is sorted and is a permutation of the original. Common errors: assuming the conclusion; skipping the base case; wrong index range. Ex 2.4, 2.5 (hard).' },
+      { w: 196, h: 140, c: 'slide', t: 'Lab sheet 3 — Linked lists', d: [630, 236, -4], m: null,
+        b: '1. Implement insert_front, insert_back, delete(key).\n2. Reverse a singly linked list in place.\n3. Detect a cycle (Floyd). Prove correctness.\n4. Merge two sorted lists. Complexity?\n5. Use a sentinel node to simplify (1)–(4).\nSubmit via GitLab by Friday. Marks: tests 60% / style 20% / report 20%. Plagiarism checks apply.' },
+
+      /* ---- the scribbles that make it feel real ---- */
+      { w: 118, h: 70, c: 'sticky', t: '', d: [-246, -6, -11], m: [-38, 66, -12], b: 'EXAM 14 NOV!!\n(rec. 11 + 9 ??)' },
+      { w: 128, h: 76, c: 'sticky', t: '', d: [262, 2, 9], m: [72, 170, 10], b: 'ask Prof re:\nch.7 ??\nSEE NOTES p.112' },
+      { w: 112, h: 64, c: 'sticky', t: '', d: [-474, 148, 8], m: null, b: '<span class="st">wk 5</span> wk 6\nCATCH UP!!' }
     ];
     const messEls = MESS.map(m => {
       const d = document.createElement('div');
       d.className = 'el mc' + (m.c ? ' ' + m.c : '');
       d.style.width = m.w + 'px'; d.style.height = m.h + 'px';
-      d.innerHTML = '<div class="mi"><div class="mt">' + m.t + '</div><div class="mb">' + m.b + '</div></div>';
+      d.innerHTML = '<div class="mi">' + (m.t ? '<div class="mt">' + m.t + '</div>' : '') + '<div class="mb">' + m.b + '</div>' + (m.t.indexOf('Lecture 2') === 0 || m.t.indexOf('Fig. 7.3') === 0 ? SVG_TREE : '') + '</div>';
       scene.insertBefore(d, el.anchor);
       return d;
     });
@@ -388,19 +474,22 @@ body{margin:0;background:#FAFAF8}
     let avRow = [], avShuf = [], avTgt = [], P = {};
 
     /* ---------- layouts ---------- */
-    const D_MESS = [[-430, -125, -9], [-280, 95, 6], [-125, -170, -4], [60, 100, 8], [225, -110, -6], [425, 55, 10], [-45, -10, 3], [395, -205, -5]];
-    const M_MESS = [[-85, -250, -9], [85, -195, 6], [-95, -110, -4], [90, -20, 8], [-70, 60, -6], [95, 130, 10], [0, -60, 3], [-60, 225, -5]];
-
     function layoutFor(m) {
+      const l = layoutBase(m);
+      l.mess = MESS.map(x => (m ? x.m : x.d));
+      l.act = MESS.map((_, i) => i).filter(i => l.mess[i]);
+      return l;
+    }
+    function layoutBase(m) {
       if (!m) return {
-        m: false, W: 1440, H: 720, cam: .88, ms: 1, cs: 1, mess: D_MESS, scanV: false,
+        m: false, W: 1440, H: 720, cam: .88, ms: 1.16, cs: 1, scanV: false,
         clr: { note: [-300, -150], flash: [0, -150], quiz: [300, -150], puzzle: [-150, 140], streak: [200, 140] },
         p1S: 1, p2S: 1, phoneX: -430, phoneY: 0, dashS: 1, dashX: 200, dashY: 0, bloomS: 1
       };
       const l = {
-        m: true, W: 390, H: 680, cam: .9, ms: .64, cs: .56, mess: M_MESS, scanV: true,
-        clr: { note: [-88, -172], flash: [88, -176], quiz: [-88, -24], puzzle: [88, -14], streak: [0, 126] },
-        p1S: .8, dashS: .85, dashX: 0, bloomS: 1, phoneX: 0
+        m: true, W: 390, H: 680, cam: .9, ms: .62, cs: .56, scanV: true,
+        clr: { note: [-88, -176], flash: [88, -180], quiz: [-88, -6], puzzle: [88, 6], streak: [0, 176] },
+        p1S: .8, dashS: .78, dashX: 0, bloomS: 1, phoneX: 0
       };
       return l;
     }
@@ -439,7 +528,7 @@ body{margin:0;background:#FAFAF8}
       avShuf = avs.map(() => ({ x: rnd(0, bw - 24), y: rnd(34, 96) }));
       const cnt = [0, 0, 0];
       avTgt = avs.map((_, i) => { const g = GRP[i], r = cnt[g]++; return { x: (bw / 3) * (g + .5) - 12, y: 34 + r * 30 }; });
-      trails.forEach((t, i) => { const p = L.mess[i]; t.style.width = Math.hypot(p[0], p[1]) + 'px'; });
+      L.act.forEach(i => { const p = L.mess[i]; trails[i].style.width = Math.hypot(p[0], p[1]) + 'px'; });
       L.scanW = L.scanV ? L.W : 3; L.scanH = L.scanV ? 3 : L.H;
       el.scan.style.width = L.scanW + 'px'; el.scan.style.height = L.scanH + 'px';
       el.bloom.style.opacity = '';
@@ -454,10 +543,12 @@ body{margin:0;background:#FAFAF8}
       gs.set(el.words[0], { opacity: 1, scale: 1, y: 0 });
       gs.set(el.seed, { x: 0, y: 0, scaleX: 0, scaleY: 0, opacity: 1 });
       gs.set(el.ring, { scale: .3, opacity: 0 });
-      gs.set(messEls, { x: 0, y: 0, rotation: 0, scaleX: 0, scaleY: 0, opacity: 0 });
+      messEls.forEach(c => gs.set(c, { x: 0, y: 0, rotation: rnd(-40, 40), scaleX: 0, scaleY: 0, opacity: 0 }));
       gs.set(messIn, { x: 0, y: 0, rotation: 0 });
-      trails.forEach((t, i) => {
-        const p = L.mess[i];
+      gs.set(el.tally, { x: 0, y: m ? 312 : 322, scale: .7, opacity: 0 });
+      tallyN.textContent = '0';
+      L.act.forEach(i => {
+        const t = trails[i], p = L.mess[i];
         gs.set(t, { x: p[0], y: p[1], xPercent: 0, yPercent: -50, rotation: Math.atan2(-p[1], -p[0]) * 180 / Math.PI, scaleX: 0, opacity: 0, transformOrigin: '0% 50%' });
       });
       gs.set(el.orb, { x: 0, y: -90, scaleX: .3, scaleY: .3, opacity: 0 });
@@ -489,8 +580,9 @@ body{margin:0;background:#FAFAF8}
 
       /* dashboard */
       gs.set(el.dash, { x: L.dashX + (m ? 0 : 1000), y: L.dashY + (m ? 800 : 0), scaleX: L.dashS, scaleY: L.dashS, skewX: m ? 0 : 10, opacity: 0 });
-      gs.set([dq.f1, dq.f2], { scaleX: 0 });
-      dq.p1.textContent = '0%'; dq.p2.textContent = '0%';
+      gs.set([dq.f1, dq.f2, dq.f3], { scaleX: 0 });
+      dq.p1.textContent = '0%'; dq.p2.textContent = '0%'; dq.p3.textContent = '0%';
+      gs.set(el.badge, { scale: 0 });
       gs.set(dq.flag, { scale: 0, rotation: -12 });
       gs.set(dq.colh, { opacity: 0 });
       avs.forEach((a, i) => gs.set(a, { x: avRow[i].x, y: avRow[i].y, scale: 0, rotation: 0 }));
@@ -505,15 +597,15 @@ body{margin:0;background:#FAFAF8}
       reset();
       const m = L.m;
       gs.set(el.words, { opacity: 1, scale: 1, y: 0 });
-      gs.set(el.head, { y: m ? -282 : -268, scaleX: m ? .74 : .86, scaleY: m ? .74 : .86 });
-      const qs = m ? .9 : 1;
-      gs.set(el.quiz, Object.assign({ x: m ? 0 : -300, y: m ? -92 : 56, opacity: 1 }, S(qs)));
+      gs.set(el.head, { y: m ? -272 : -268, scaleX: m ? .7 : .86, scaleY: m ? .7 : .86 });
+      const qs = m ? .78 : 1;
+      gs.set(el.quiz, Object.assign({ x: m ? 0 : -300, y: m ? -118 : 56, opacity: 1 }, S(qs)));
       gs.set(oB.fill, { opacity: 1 }); gs.set(oB.t1, { opacity: 0 }); gs.set(oB.t2, { opacity: 1 }); gs.set(oB.l2, { opacity: 1 });
       gs.set(oB.chk, { scale: 1 }); gs.set(el.optA, { opacity: .55 });
-      const ds = m ? .64 : 1, dy = m ? L.H / 2 - 14 - L.dashH * ds / 2 : 60;
+      const ds = m ? .6 : 1, dy = m ? L.H / 2 - 12 - L.dashH * ds / 2 : 60;
       gs.set(el.dash, Object.assign({ x: m ? 0 : 190, y: dy, skewX: 0, opacity: 1 }, S(ds)));
-      gs.set(dq.f1, { scaleX: .82 }); gs.set(dq.f2, { scaleX: .41 });
-      dq.p1.textContent = '82%'; dq.p2.textContent = '41%';
+      gs.set(dq.f1, { scaleX: .82 }); gs.set(dq.f2, { scaleX: .41 }); gs.set(dq.f3, { scaleX: .67 }); gs.set(el.badge, { scale: 1 });
+      dq.p1.textContent = '82%'; dq.p2.textContent = '41%'; dq.p3.textContent = '67%';
       gs.set(dq.flag, { scale: 1, rotation: 0 }); gs.set(dq.colh, { opacity: 1 });
       avs.forEach((a, i) => gs.set(a, { x: avTgt[i].x, y: avTgt[i].y, scale: 1, rotation: 0 }));
       gs.set([dq.rec1, dq.rec2], { scale: 1, opacity: 1 });
@@ -525,7 +617,7 @@ body{margin:0;background:#FAFAF8}
       const t = gs.timeline({ repeat: -1, onRepeat: reset });
 
       /* === 1 · HOOK ======================================================= */
-      t.to(el.words.slice(1), { opacity: 1, scale: 1, y: 0, duration: .45, ease: 'back.out(2.2)', stagger: .13 }, T.HOOK + .1);
+      t.to(el.words.slice(1), { opacity: 1, scale: 1, y: 0, duration: .45, ease: 'back.out(2.2)', stagger: .1 }, T.HOOK + .08);
       t.to(el.head, { scaleX: .02, scaleY: 1.08, duration: .2, ease: 'power3.in' }, T.HOOK + 1.3);
       t.to(el.head, { opacity: 0, duration: .04 }, T.HOOK + 1.46);
       t.to(el.seed, Object.assign({ duration: .18, ease: 'back.out(2.2)' }, S(1)), T.HOOK + 1.4);
@@ -534,16 +626,28 @@ body{margin:0;background:#FAFAF8}
       t.to(el.seed, Object.assign({ duration: .08, ease: 'power2.out' }, S(1.5)), T.MESS);
       t.to(el.seed, Object.assign({ duration: .2, ease: 'power2.in' }, S(0)), T.MESS + .08);
       t.fromTo(el.ring, { scale: .3, opacity: .6 }, { scale: 5, opacity: 0, duration: .55, ease: 'power2.out', immediateRender: false }, T.MESS);
-      messEls.forEach((c, i) => {
-        const p = L.mess[i];
-        t.to(c, Object.assign({ x: p[0], y: p[1], rotation: p[2], opacity: 1, duration: .55, ease: 'back.out(1.5)' }, S(ms)), T.MESS + .04 + i * .05);
+      /* pile bursts outward from the seed: nearest pieces land first, the rest pile on top */
+      const act = L.act, step = 1.0 / act.length;
+      const byDist = act.slice().sort((a, b) => Math.hypot(L.mess[a][0], L.mess[a][1]) - Math.hypot(L.mess[b][0], L.mess[b][1]));
+      byDist.forEach((i, k) => {
+        const c = messEls[i], p = L.mess[i], t0 = T.MESS + .04 + k * step;
+        t.to(c, { x: p[0], y: p[1], rotation: p[2], opacity: 1, duration: .6, ease: 'back.out(1.3)' }, t0);
+        t.to(c, { keyframes: [
+          { scaleX: ms * 1.12, scaleY: ms * .9, duration: .3, ease: 'power3.out' },
+          { scaleX: ms, scaleY: ms, duration: .3, ease: 'back.out(2.4)' }
+        ] }, t0);
       });
-      messIn.forEach((inn, i) => {
+      act.forEach((i, k) => {
         const kf = [];
-        for (let k = 0; k < 11; k++) kf.push({ x: rnd(-2, 2), y: rnd(-2, 2), rotation: rnd(-.8, .8), duration: .09, ease: 'none' });
+        for (let n = 0; n < 14; n++) kf.push({ x: rnd(-2, 2), y: rnd(-2, 2), rotation: rnd(-.9, .9), duration: .09, ease: 'none' });
         kf.push({ x: 0, y: 0, rotation: 0, duration: .09, ease: 'none' });
-        t.to(inn, { keyframes: kf }, T.MESS + .9 + i * .012);
+        t.to(messIn[i], { keyframes: kf }, T.MESS + 1.0 + k * .01);
       });
+
+      /* the tally: how much material an institution is sitting on */
+      const tallyO = { v: 0 };
+      t.to(el.tally, { opacity: 1, scale: 1, duration: .4, ease: 'back.out(2.2)' }, T.MESS + .35);
+      t.to(tallyO, { v: 1284, duration: 1.45, ease: 'power2.out', onUpdate() { tallyN.textContent = Math.round(tallyO.v).toLocaleString('en-US'); } }, T.MESS + .35);
 
       /* === 3 · THE ENGINE ================================================= */
       const E = T.ENGINE;
@@ -557,18 +661,20 @@ body{margin:0;background:#FAFAF8}
       t.to(el.scan, L.scanV ? { y: H / 2 + 6, duration: .65, ease: 'none' } : { x: W / 2 + 6, duration: .65, ease: 'none' }, E + .2);
       t.to(el.scan, { opacity: 0, duration: .05 }, E + .85);
 
-      const order = messEls.map((_, i) => i).sort((a, b) => L.scanV ? L.mess[a][1] - L.mess[b][1] : L.mess[a][0] - L.mess[b][0]);
-      const pulses = [];
+      const order = L.act.slice().sort((a, b) => L.scanV ? L.mess[a][1] - L.mess[b][1] : L.mess[a][0] - L.mess[b][0]);
+      const astep = .64 / order.length, pulses = [];
       order.forEach((i, k) => {
-        const c = messEls[i], tr = trails[i], t0 = E + .3 + k * .07;
+        const c = messEls[i], tr = trails[i], t0 = E + .3 + k * astep;
         t.to(c, { scaleX: ms * 1.18, scaleY: ms * .84, duration: .1, ease: 'power1.out' }, t0);
         t.to(c, { x: 0, y: 0, rotation: 0, duration: .32, ease: 'power3.in' }, t0);
         t.to(c, { scaleX: .04, scaleY: .04, opacity: 0, duration: .22, ease: 'power3.in' }, t0 + .1);
-        t.to(tr, { scaleX: 1, opacity: .7, duration: .16, ease: 'power2.out' }, t0);
+        t.to(tr, { scaleX: 1, opacity: .55, duration: .16, ease: 'power2.out' }, t0);
         t.to(tr, { opacity: 0, duration: .18, ease: 'none' }, t0 + .16);
-        pulses.push({ scaleX: 1.1 + k * .008, scaleY: .9 - k * .006, duration: .04, ease: 'power2.out' }, { scaleX: 1, scaleY: 1, duration: .03, ease: 'power2.in' });
+        if (k % 2 === 1) pulses.push({ scaleX: 1.1 + k * .004, scaleY: .9 - k * .003, duration: .035, ease: 'power2.out' }, { scaleX: 1, scaleY: 1, duration: .03, ease: 'power2.in' });
       });
-      t.to(el.orb, { keyframes: pulses }, E + .3 + .3 - .03);
+      t.to(el.orb, { keyframes: pulses }, E + .42);
+      t.fromTo(tallyO, { v: 1284 }, { v: 0, duration: .75, ease: 'power2.in', immediateRender: false, onUpdate() { tallyN.textContent = Math.round(tallyO.v).toLocaleString('en-US'); } }, E + .3);
+      t.to(el.tally, { opacity: 0, scale: .8, duration: .25, ease: 'power2.in' }, E + .95);
 
       /* === 4 · CLARITY ==================================================== */
       const C = T.CLARITY;
@@ -641,18 +747,20 @@ body{margin:0;background:#FAFAF8}
       t.to(el.cursor, { opacity: 0, duration: .15 }, C + 2.45);
 
       /* glide into the phone */
-      const G = C + 2.6;
+      const G = C + 2.5;
       CL.forEach((pair, i) => {
-        const c = pair[1], t0 = G + i * .04;
-        t.to(c, { x: 0, y: 0, rotation: 0, duration: .35, ease: 'power3.inOut' }, t0);
-        t.to(c, Object.assign({ duration: .35, ease: 'power2.in' }, S(.25)), t0);
-        t.to(c, { opacity: 0, duration: .1, ease: 'none' }, t0 + .25);
+        const c = pair[1], t0 = G + i * .035;
+        t.to(c, { x: 0, y: 0, rotation: 0, duration: .32, ease: 'power3.inOut' }, t0);
+        t.to(c, Object.assign({ duration: .32, ease: 'power2.in' }, S(.3)), t0);
+        t.to(c, { opacity: 0, duration: .08, ease: 'none' }, t0 + .24);
       });
-      t.to(el.phone, Object.assign({ opacity: 1, duration: .4, ease: 'back.out(1.7)' }, S(L.p1S)), G + .12);
+      /* the phone only appears once the cards are almost gone, so the two never ghost over each other */
+      t.to(el.phone, { opacity: 1, duration: .1, ease: 'none' }, G + .27);
+      t.to(el.phone, Object.assign({ duration: .3, ease: 'back.out(1.8)' }, S(L.p1S)), G + .27);
       t.to(el.phone, { keyframes: [
-        { scaleX: L.p1S * 1.03, scaleY: L.p1S * .94, duration: .04 },
-        { scaleX: L.p1S, scaleY: L.p1S, duration: .04 }
-      ] }, G + .52);
+        { scaleX: L.p1S * 1.04, scaleY: L.p1S * .94, duration: .05, ease: 'power2.out' },
+        { scaleX: L.p1S, scaleY: L.p1S, duration: .06, ease: 'power2.in' }
+      ] }, G + .57);
 
       /* === 5 · INSIGHTS =================================================== */
       const I = T.INSIGHTS;
@@ -674,6 +782,8 @@ body{margin:0;background:#FAFAF8}
       count(dq.p1, 82, I + .65, .7);
       t.to(dq.f2, { scaleX: .41, duration: .9, ease: 'elastic.out(1,0.55)' }, I + .75);
       count(dq.p2, 41, I + .75, .6);
+      t.to(dq.f3, { scaleX: .67, duration: .9, ease: 'elastic.out(1,0.55)' }, I + .85);
+      count(dq.p3, 67, I + .85, .6);
       t.to(dq.flag, { scale: 1, rotation: 0, duration: .35, ease: 'back.out(3)' }, I + 1.15);
 
       t.to(dq.colh, { opacity: 1, duration: .2, stagger: .05 }, I + .8);
@@ -709,6 +819,7 @@ body{margin:0;background:#FAFAF8}
         { scaleX: L.p2S, scaleY: L.p2S, duration: .08, ease: 'power2.out' }
       ] }, I + 2.5);
       t.to(el.toast, { scale: 1, duration: .35, ease: 'back.out(2.5)' }, I + 2.5);
+      t.to(el.badge, { scale: 1, duration: .35, ease: 'back.out(3)' }, I + 2.58);
 
       /* === 6 · LOOP RESOLVE =============================================== */
       const R = T.RESOLVE;
@@ -786,9 +897,9 @@ body{margin:0;background:#FAFAF8}
     };
   }
 
-  window.initModuHero = initModuHero;
-  const root = document.getElementById('moduHero');
-  if (root) window.moduHero = initModuHero(root);
+  window.initStudyhallHero = initStudyhallHero;
+  const root = document.getElementById('studyhallHero');
+  if (root) window.studyhallHero = initStudyhallHero(root);
 })();
 </script>
 </body>

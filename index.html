@@ -46,7 +46,7 @@
   </div>
 
   <div class="stage">
-<section class="mh" id="moduHero" role="img"
+<section class="mh" id="studyhallHero" role="img"
   aria-label="Animated product story for Study Hall, an AI learning platform for universities. A university's messy lecture notes, past papers and quizzes are absorbed by an AI engine and turned into atomic notes, flashcards, quizzes and interactive puzzles inside a student app. A lecturer dashboard then shows which topics students struggle with and who is ahead or behind, recommends what to revisit in class, and sends extra drills back to the students.">
 <div class="mh-viewport" aria-hidden="true">
 <div class="mh-stage">
@@ -65,9 +65,11 @@
   <!-- mess cards + trails are inserted before this marker (keeps z-order) -->
   <span id="mAnchor" hidden></span>
 
+  <div class="el" id="tally"><b id="tn">0</b><span>pages of notes, papers &amp; slides</span></div>
+
   <div class="el" id="scan"></div>
 
-  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Study Hall AI</span></div>
+  <div class="el" id="orb"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg><span>Study Hall</span></div>
 
   <!-- clean cards -->
   <div class="el card cl" id="cNote">
@@ -118,6 +120,8 @@
         <span class="mo">Sorts items alphabetically</span>
         <span class="mo">Maps keys to values in O(1)</span>
       </div>
+      <div class="up"><div class="ic"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div><div><b>Recursion drills</b><small>Up next · 5 min</small></div><span class="badge" id="badge">3</span></div>
+      <div class="up alt"><div class="ic"><svg viewBox="0 0 24 24"><use href="#mh-spark"/></svg></div><div><b>Flashcards</b><small>12 due today</small></div></div>
       <div class="check"><div class="lip"></div><div class="bf">Check</div></div>
     </div>
   </div>
@@ -130,6 +134,7 @@
         <div class="lab">Topic mastery</div>
         <div class="mrow"><div class="mtop"><span>Hash maps</span><span class="pc" id="pc1">0%</span></div><div class="track"><i class="ok" id="f1"></i></div></div>
         <div class="mrow"><div class="mtop"><span>Recursion<em class="flag" id="flag" style="font-style:normal">Struggling</em></span><span class="pc" id="pc2">0%</span></div><div class="track"><i class="warn" id="f2"></i></div></div>
+        <div class="mrow"><div class="mtop"><span>Graphs</span><span class="pc" id="pc3">0%</span></div><div class="track"><i class="mid" id="f3"></i></div></div>
       </div>
       <div>
         <div class="lab">Where the class is</div>
@@ -349,8 +354,8 @@
       <h2>Bring Active Courseware to Your Department</h2>
       <p>Join our pilot program for the upcoming academic term, or schedule a discussion with our founding team.</p>
       <div class="opts">
-        <div class="opt"><div class="k">For Deans &amp; Faculty</div><h3>Request an Institutional Pilot</h3><p>Deploy Study Hall for a selected module or department. Includes hands-on onboarding, LMS setup, and faculty support.</p><a class="btn" href="mailto:modu.education@gmail.com?subject=Campus%20Pilot%20Application">Apply for Campus Pilot</a></div>
-        <div class="opt"><div class="k">For Academic &amp; Investment Partners</div><h3>Speak with the Founders</h3><p>Review our early pilot outcomes, platform demonstrations, and academic roadmap.</p><a class="btn ghost" href="mailto:modu.education@gmail.com?subject=Founder%20Meeting">Schedule Founder Meeting</a></div>
+        <div class="opt"><div class="k">For Deans &amp; Faculty</div><h3>Request an Institutional Pilot</h3><p>Deploy Study Hall for a selected module or department. Includes hands-on onboarding, LMS setup, and faculty support.</p><a class="btn" href="#">Apply for Campus Pilot</a></div>
+        <div class="opt"><div class="k">For Academic &amp; Investment Partners</div><h3>Speak with the Founders</h3><p>Review our early pilot outcomes, platform demonstrations, and academic roadmap.</p><a class="btn ghost" href="#">Schedule Founder Meeting</a></div>
       </div>
     </div>
   </div>
@@ -362,7 +367,7 @@
     <div class="fgrid">
       <div><a class="logo" href="#top" style="display:inline;margin:0">Study <i>Hall</i></a><p>Study Hall — Transforming Course Material into Active, Adaptive Learning.</p></div>
       <div><h4>Platform</h4><a href="#overview">Overview</a><a href="#faculty">Faculty Tools</a><a href="#science">Learning Science</a><a href="#security">Security &amp; Privacy</a><a href="blog/index.html">Blog</a></div>
-      <div><h4>Contact</h4><a href="mailto:modu.education@gmail.com">modu.education@gmail.com</a></div>
+      <div><h4>Contact</h4><a href="#pilot">Request a pilot</a></div>
     </div>
     <div class="copy"><span>© 2026 Study Hall. Built in Ireland.</span></div>
   </div>
