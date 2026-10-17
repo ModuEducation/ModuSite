@@ -6,7 +6,7 @@
 
      T.HOOK      0.00s   headline springs in, squashes to a purple seed
      T.MESS      1.60s   seed bursts into the pile of grey legacy material
-     T.ENGINE    3.50s   Study Hall pill lands, scanline sweeps, pile is absorbed
+     T.ENGINE    3.50s   StudyHall pill lands, scanline sweeps, pile is absorbed
      T.CLARITY   4.60s   clean cards snap out, interact, glide into the phone
      T.INSIGHTS  7.80s   camera pulls back, lecturer dashboard, drills go back
      T.RESOLVE  10.50s   everything condenses to the seed, which opens into "The"
