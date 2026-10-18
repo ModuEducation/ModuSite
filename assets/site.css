@@ -217,3 +217,18 @@ footer{padding:64px 0 40px}
 .artcta{margin-top:48px;background:var(--pt);border:1px solid #D8D5F7;border-radius:24px;padding:30px}
 .artcta h3{margin:0 0 8px}.artcta p{margin-bottom:20px}
 @media (max-width:960px){.posts{grid-template-columns:1fr}}
+
+/* ---------- accessibility + partners ---------- */
+.head .lead{margin-top:18px;font-size:18px;color:var(--ink2)}
+.head.c .lead{margin-left:auto;margin-right:auto}
+.cols.acc{grid-template-columns:repeat(3,1fr)}
+.cols.acc .card .ic{margin-bottom:16px}
+.note{margin-top:36px;max-width:46em;margin-left:auto;margin-right:auto;font-size:16px;color:var(--ink2);background:var(--pt);border:1px solid #D8D5F7;border-radius:18px;padding:18px 22px}
+.note a{color:var(--p);font-weight:500}
+.partners{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.partner{display:flex;align-items:center;gap:22px;background:var(--bg);border:1px solid var(--line);border-bottom-width:4px;border-radius:24px;padding:22px 32px 22px 22px}
+.partner img{width:110px;height:110px;border-radius:50%;display:block}
+.partner b{display:block;font:800 22px/1.2 Nunito,sans-serif;color:var(--ink)}
+.partner span{display:block;margin-top:4px;font-size:14px;color:var(--ink2)}
+@media (max-width:960px){.cols.acc{grid-template-columns:1fr}}
+@media (max-width:560px){.partner{flex-direction:column;text-align:center;padding:24px}}
